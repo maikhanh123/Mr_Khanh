@@ -173,6 +173,14 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
                 templateUrl: 'views/form/sign-up.html',
                 controller: 'storeController'
             })
+        .when('/sign-in', {
+            templateUrl: 'views/form/sign-in.html',
+            controller: 'storeController'
+        })
+        .when('/prices', {
+            templateUrl: 'views/prices.html',
+            controller: 'storeController'
+        })
         .otherwise({
                 redirectTo: "/"
             });

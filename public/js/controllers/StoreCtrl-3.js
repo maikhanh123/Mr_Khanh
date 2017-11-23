@@ -53,6 +53,11 @@ storeApp.controller("storeController", function ($scope, DataService,$http,$loca
     $scope.store = DataService.store;
     $scope.cart = DataService.cart;
 
+    $scope.prices = [];
+    $http.get("data/prices.json").then(function (response) {
+        $scope.prices = response.data.manufacture;
+    });
+
     //comment data
     $scope.commentBmw01Data = {};
     $scope.commentBmw02Data = {};
@@ -211,6 +216,7 @@ storeApp.controller("storeController", function ($scope, DataService,$http,$loca
     $http.get('/api/comments/yamaha-05').then(function(response) {
         $scope.commentYamaha05 = response.data;
     });
+
 
 
     $scope.showUser = $localStorage.findUser;
