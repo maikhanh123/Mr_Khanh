@@ -2,7 +2,7 @@
 
 <div id="header"   >
     <nav class="navbar navbar-inverse" ng-controller="storeController">
-        <div>
+        <div class="container" style="margin-left: auto; margin-right: auto">
             <div class="navbar-header pull-right" >
 
                 <div>
@@ -15,9 +15,9 @@
                     </button>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <div class="collapse navbar-collapse" id="bs-nav-demo" style="margin-left: -30px;border: none;">
                 <ul class="nav navbar-nav">
-                    <li><a href="/" onClick="window.location.reload()">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/news">News</a></li>
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
@@ -116,7 +116,7 @@
                         </li>
 
                         <li style="margin-right: 5px;">
-                            <form class="navbar-form" style="margin-bottom: 0;padding: 0;">
+                            <form class="navbar-form" style="margin-bottom: 0;padding: 0;border: none;">
                                 <div class="form-group search1">
                                     <input  ng-model="search"  type="text" class="form-control" placeholder="Find your motorcycle" size="15" style="margin-bottom: 0;margin-right: -20px;">
                                 </div>
